@@ -9,7 +9,15 @@ const Card = ({ title, info }) => {
 				<div className='info'>{info}</div>
 
 				<div className='move-btn'>
-					<button className='btn'>Sign Up</button>
+					<button
+						className='btn'
+						onClick={(e) => {
+							e.preventDefault();
+							window.location.href = "http://localhost:3000/signup";
+						}}
+					>
+						Sign Up
+					</button>
 				</div>
 			</div>
 		</div>
